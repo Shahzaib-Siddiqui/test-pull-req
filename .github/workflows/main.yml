@@ -13,6 +13,7 @@ jobs:
         username: ${{ secrets.USER }}
         password: ${{ secrets.PASS }}
         port: ${{ secrets.PORT }}
-        run: |
-          echo "hello"
+        script: |
+          cd /var/www/html/test-pull-req
+          git pull origin master
           
