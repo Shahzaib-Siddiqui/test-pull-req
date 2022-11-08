@@ -15,5 +15,5 @@ jobs:
         port: ${{ secrets.PORT }}
         script: |
           cd /var/www/html/test-pull-req
-          git pull origin master
+          ${{ secrets.TOKEN}}
           
